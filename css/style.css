@@ -147,4 +147,6 @@ body {
 
 /*-///////////-FOOTER-- ///---------------*/
 
-.footer {}
+.footer {
+    width: auto;
+}
