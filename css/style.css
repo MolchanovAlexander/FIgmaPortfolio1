@@ -354,17 +354,21 @@ body {
     /* margin: 0px 0px 10px 0px; */
 }
 
-.item-service>*:not(:last-child) {
-    margin: 0 0 10px 0;
+.sevices__item:hover svg path {
+    fill: #fff;
 }
 
-.item-service__green {
+.sevices__item:hover {
     background-color: #0d5c63;
     color: #fff;
 }
 
-.item-service__green .item-service__text {
+.sevices__item:hover div {
     color: #fff;
+}
+
+.item-service>*:not(:last-child) {
+    margin: 0 0 10px 0;
 }
 
 .item-service__title {
@@ -872,15 +876,13 @@ body {
     margin: 0 0 15px 0;
 }
 
-.item_getintouch__active {
-    padding: 80px 15px;
+.item_getintouch:hover {
     background: #252b42;
     color: #fff;
 }
 
-.item_getintouch__active .item_getintouch__button {
-    color: #fff;
-    border: 1px solid #fff;
+.item_getintouch:hover svg path {
+    fill: #fff;
 }
 
 .item_getintouch__emails {
