@@ -1,5 +1,6 @@
 @import "zero.scss";
 @import "mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400&family=Playfair+Display:wght@700&display=swap');
 $featurestext_h1_color: #042521;
 $featurestext_color: #80918E;
 $pale_color: #7D7987;
@@ -72,11 +73,12 @@ $stars_color: #FFBB0C;
                         font-size: 16px;
                         color: #B8BECD;
                         line-height: 121%;
-                        font-weight: 500;
+                        font-weight: 400;
                     }
                     .menu__link:hover {
                         text-decoration: underline;
                         color: #202336;
+                        font-weight: 500;
                     }
                 }
                 .menu__item {
@@ -177,6 +179,7 @@ $stars_color: #FFBB0C;
             .main-block__content {
                 flex: 1 1 50%;
                 .main-block__title {
+                    font-family: 'Playfair Display', serif;
                     margin-left: 15px;
                     font-size: 64px;
                     line-height: calc(80/64*100%);
@@ -196,10 +199,12 @@ $stars_color: #FFBB0C;
                 }
                 .main-block__text {
                     margin-left: 15px;
-                    color: #737373;
-                    font-size: 20px;
+                    color: #202336;
+                    font-size: 22px;
+                    font-weight: 600;
                     line-height: 1.21;
                     position: relative;
+                    font-weight: 600;
                     &::after {
                         content: "";
                         position: absolute;
@@ -228,6 +233,7 @@ $stars_color: #FFBB0C;
                 .main-block__form {
                     display: flex;
                     flex-wrap: wrap;
+                    font-weight: 400;
                     margin: 58px -15px 30px 0;
                     padding-left: -15px;
                     .select__main {
@@ -348,7 +354,8 @@ $stars_color: #FFBB0C;
     text-align: left;
     letter-spacing: 0.2;
     .header-block__title {
-        font-size: 40px;
+        font-size: 36px;
+        font-family: 'Playfair Display', serif;
         line-height: 142%;
         font-weight: 700;
     }
@@ -363,7 +370,9 @@ $stars_color: #FFBB0C;
     .header-block__subtitle {
         line-height: 142%;
         font-size: 14px;
-        color: #737373;
+        color: #7D7987;
+        font-family: 'Mulish', sans-serif;
+        font-weight: 300;
     }
 }
 
@@ -374,7 +383,7 @@ $stars_color: #FFBB0C;
     .stat__container {
         display: flex;
         .stat__header {
-            margin: 0 0 50px 0;
+            margin: 0 0 50px 100px;
         }
         .stat__body {
             display: flex;

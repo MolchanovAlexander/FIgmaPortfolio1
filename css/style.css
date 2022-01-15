@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400&family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400&family=Playfair+Display:wght@700&display=swap");
 *,
 *::before,
 *::after {
@@ -38,7 +40,7 @@ body {
   line-height: 1;
   font-size: 14px;
   font-weight: 500;
-  font-family: Montserrat;
+  font-family: 'Inter', sans-serif;
   background: #fafafa;
 }
 
@@ -150,12 +152,13 @@ body {
   font-size: 16px;
   color: #B8BECD;
   line-height: 121%;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .header .header__container .header__ui .header__menu .menu__list .menu__link:hover {
   text-decoration: underline;
   color: #202336;
+  font-weight: 500;
 }
 
 .header .header__container .header__ui .header__menu .menu__item {
@@ -294,6 +297,7 @@ body {
 }
 
 .page .main-block .main-block__body .main-block__content .main-block__title {
+  font-family: 'Playfair Display', serif;
   margin-left: 15px;
   font-size: 64px;
   line-height: calc(80/64*100%);
@@ -317,10 +321,12 @@ body {
 
 .page .main-block .main-block__body .main-block__content .main-block__text {
   margin-left: 15px;
-  color: #737373;
-  font-size: 20px;
+  color: #202336;
+  font-size: 22px;
+  font-weight: 600;
   line-height: 1.21;
   position: relative;
+  font-weight: 600;
 }
 
 .page .main-block .main-block__body .main-block__content .main-block__text::after {
@@ -356,6 +362,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  font-weight: 400;
   margin: 58px -15px 30px 0;
   padding-left: -15px;
 }
@@ -500,7 +507,8 @@ body {
 }
 
 .header-block .header-block__title {
-  font-size: 40px;
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
   line-height: 142%;
   font-weight: 700;
 }
@@ -518,7 +526,9 @@ body {
 .header-block .header-block__subtitle {
   line-height: 142%;
   font-size: 14px;
-  color: #737373;
+  color: #7D7987;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
 }
 
 .page__stat {
@@ -533,7 +543,7 @@ body {
 }
 
 .page__stat .stat__container .stat__header {
-  margin: 0 0 50px 0;
+  margin: 0 0 50px 100px;
 }
 
 .page__stat .stat__container .stat__body {

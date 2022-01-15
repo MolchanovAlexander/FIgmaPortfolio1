@@ -6,6 +6,7 @@ $paleheader_color: #B8BECD;
 $orange_color: #FB8F1D;
 $footer_color: #17213c;
 $stars_color: #FFBB0C;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Mulish:wght@300;400&family=Playfair+Display:wght@700&display=swap');
 %button_style {
     border-radius: 7px;
     display: flex;
@@ -20,7 +21,8 @@ $stars_color: #FFBB0C;
     border: 1px solid #FB8F1D;
 }
 
-@mixin butt_meas ($he, $wi) {
+@mixin butt_meas ($he,
+$wi) {
     min-height: $he;
     min-width: $wi;
 }
