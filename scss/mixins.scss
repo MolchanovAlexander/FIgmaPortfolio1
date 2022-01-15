@@ -1,17 +1,26 @@
+$featurestext_h1_color: #042521;
+$featurestext_color: #80918E;
+$pale_color: #7D7987;
+$text_color: #202336;
+$paleheader_color: #B8BECD;
+$orange_color: #FB8F1D;
+$footer_color: #17213c;
+$stars_color: #FFBB0C;
 %button_style {
     border-radius: 7px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    padding: 5px 36px;
-    min-height: 48px;
-    min-width: 137px;
+    padding: 0px 36px;
     font-weight: 700;
     letter-spacing: 0.2px;
     line-height: 150%;
-    margin: 10px 0;
     background: #fff;
     color: #FB8F1D;
-    margin: 8px;
     border: 1px solid #FB8F1D;
+}
+
+@mixin butt_meas ($he, $wi) {
+    min-height: $he;
+    min-width: $wi;
 }
