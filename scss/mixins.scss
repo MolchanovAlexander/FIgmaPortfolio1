@@ -17,9 +17,14 @@ $stars_color: #FFBB0C;
     font-weight: 500;
     letter-spacing: 0.2px;
     line-height: 150%;
+    background: #FB8F1D;
+    color: #fff;
+    border: 1px solid #FB8F1D;
+}
+
+%button_hover {
     background: #fff;
     color: #FB8F1D;
-    border: 1px solid #FB8F1D;
 }
 
 @mixin butt_meas ($he,
