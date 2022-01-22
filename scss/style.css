@@ -466,20 +466,13 @@ body {
 
 .page__stat .stat__container .stat__header .stat__buttons {
   display: flex;
-}
-
-.page__stat .stat__container .stat__header .stat__buttons .stat__button_orange {
   position: relative;
-  min-height: 48px;
-  min-width: 164px;
-  font-weight: 600;
-  font-size: 16px;
 }
 
-.page__stat .stat__container .stat__header .stat__buttons .stat__button_orange::after {
+.page__stat .stat__container .stat__header .stat__buttons::after {
   content: "";
   position: absolute;
-  left: 208%;
+  left: 327px;
   top: 0px;
   background: url("./../img/mainBlock/explore_round.svg") no-repeat 50%;
   width: 26px;
@@ -489,6 +482,14 @@ body {
   -moz-transform: translate(-20%, -50%);
   -ms-transform: translate(-20%, -50%);
   -o-transform: translate(-20%, -50%);
+}
+
+.page__stat .stat__container .stat__header .stat__buttons .stat__button_orange {
+  position: relative;
+  min-height: 48px;
+  min-width: 164px;
+  font-weight: 600;
+  font-size: 16px;
 }
 
 @media (max-width: 1200px) {
@@ -595,23 +596,24 @@ body {
   z-index: 1;
 }
 
-.page__destinations .destinations__header .destinations__view_all::after {
-  content: "";
-  position: absolute;
-  left: -188%;
-  top: -34px;
-  background: url("./../img/mainBlock/explore_round.svg") no-repeat 50%;
-  width: 26px;
-  height: 26px;
-  transform: translate(-20%, -50%);
-  z-index: 1;
-}
-
 .page__destinations .destinations__body {
   display: flex;
   margin: 0 -20px -30px;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
+}
+
+.page__destinations .destinations__body::after {
+  content: "";
+  position: absolute;
+  left: 83%;
+  top: -154px;
+  background: url("./../img/mainBlock/explore_round.svg") no-repeat 50%;
+  width: 26px;
+  height: 26px;
+  transform: translate(-20%, -50%);
+  z-index: 1;
 }
 
 .page__destinations .destinations__body .destinations__column {
@@ -627,10 +629,38 @@ body {
 .page__destinations .destinations__body .destinations__column .destinations__item {
   align-items: center;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.page__destinations .destinations__body .destinations__column .destinations__item .destination__overpic {
+  top: 276px;
+  position: absolute;
+  height: 56px;
+  width: 120px;
+  border-radius: 0px 6px 0px 0px;
+  background: #fff;
+  padding-top: 10px;
+}
+
+.page__destinations .destinations__body .destinations__column .destinations__item .destination__overpic .destination__title {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 25px;
+  color: #042521;
+}
+
+.page__destinations .destinations__body .destinations__column .destinations__item .destination__overpic .destination__subtitle {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #80918e;
 }
 
 .page__destinations .destinations__body .destinations__column .destinations__item .destinations__icon {
-  z-index: 2;
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .page__destinations .destinations__body .destinations__column:not(:last-child) {
@@ -654,7 +684,7 @@ body {
     margin: 0 0 25px 0;
   }
   .page__destinations {
-    padding: 0px 0 40px 0;
+    padding: 0px 0 40px 20px;
   }
   .destinations__header {
     margin: 0 0 25px 0;
@@ -663,7 +693,7 @@ body {
 
 @media (max-width: 992px) {
   .page__destinations {
-    padding: 40px 0 80px 0;
+    padding: 40px 20px 80px 20px;
   }
 }
 
@@ -713,7 +743,13 @@ body {
 @media (max-width: 1200px) {
   .guides .guides__container .guides__header {
     flex: 1 1 100%;
-    margin: 0 0 20px 0px;
+    margin: 0 0 20px 20px;
+    align-items: center;
+  }
+  .guides .guides__container .guides__img {
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -762,6 +798,7 @@ body {
   .guides .guides__container {
     flex: 1 1 100%;
     margin: 0 0 20px 0px;
+    justify-content: center;
   }
 }
 
@@ -774,7 +811,7 @@ body {
 
 /*-------------------------testimony----------------------------------------------------*/
 .testimony {
-  margin: 50px 0 50px 0;
+  margin: 250px 0 50px 0;
 }
 
 .testimony__container {
@@ -802,6 +839,7 @@ body {
 
 .testimony__header {
   display: flex;
+  margin: 0 auto;
 }
 
 .testimony__header .header-block__ornament {
@@ -855,14 +893,17 @@ body {
 
 .testimony__img {
   position: relative;
-  height: 522px;
+  display: flex;
+  flex-direction: column;
+  height: 538px;
+  margin: 0 0 0 30px;
 }
 
 .testimony__img::after {
   content: "";
   position: absolute;
-  left: 7px;
-  top: 472.8px;
+  left: -7px;
+  top: 650.8px;
   background: url("./../img/mainBlock/test_big_cross.svg") no-repeat 50%;
   width: 32px;
   height: 32px;
@@ -874,7 +915,7 @@ body {
   content: "";
   position: absolute;
   left: 370px;
-  top: 4px;
+  top: 159px;
   background: url("./../img/mainBlock/test_round_big.svg") no-repeat 50%;
   width: 42px;
   height: 42px;
@@ -884,27 +925,36 @@ body {
 
 .testimony__img .gallery-1 {
   position: relative;
-  margin-right: 388px;
+  margin: 163px 388px 0 0px;
 }
 
 .testimony__img .gallery-1 .buttons {
-  top: 410px;
+  top: 431px;
   position: absolute;
   display: flex;
-  left: 260px;
+  left: 252px;
   flex-direction: row;
-  margin: 22px 20px 0 0;
   justify-content: space-around;
   flex-wrap: nowrap;
+  width: 132px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 16px 0px 0px 0px;
+  padding: 20px 0 0 30px;
 }
 
 .testimony__img .gallery-1 .buttons input {
   border: 1px solid black;
+  max-width: 40px;
+  max-height: 40px;
   min-width: 40px;
   min-height: 40px;
   border-radius: 50%;
   position: relative;
-  margin: 2px 20px 0 0;
+}
+
+.testimony__img .gallery-1 .buttons input:first-child {
+  margin: 0px 22px 0 0;
 }
 
 .testimony__img .gallery-1 .buttons .prev1 {
@@ -925,9 +975,9 @@ body {
   background: url("./../img/mainBlock/test_ar_ri_end.svg") no-repeat 50%;
 }
 
-@media (max-width: 362px) {
+@media (max-width: 394px) {
   .testimony__img .gallery-1 .buttons {
-    flex-wrap: wrap;
+    left: 180px;
   }
 }
 
@@ -946,7 +996,18 @@ body {
   transition: 1s;
 }
 
+@media (max-width: 420px) {
+  .testimony__img {
+    position: relative;
+    margin: 0 0 0 0px;
+  }
+}
+
 /*-----------------tranding**********-------------------------------------------------*/
+.page__trending {
+  margin-top: 222px;
+}
+
 .trending__container {
   display: flex;
   flex-direction: column;
